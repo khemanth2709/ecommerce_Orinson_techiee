@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>AURA FARMING | Premium Men's Clothing, Heritage Collections & Accessories</title>
+    <link rel="icon" type="image/jpeg" href="https://media.istockphoto.com/id/1281476617/photo/mature-man-running-online-store.jpg?s=612x612&w=0&k=20&c=TnGnw59DaBgJrrswbUb_uf54UHpT6N9waOC4gQzJ2N8=">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="fabrication-alert-banner" class="fabrication-alert-banner">
+        <div class="container fabrication-banner-inner">
+            <p><i class="fa-solid fa-compass-drafting"></i> To observe our comprehensive textile weaving pipelines and material stress testing specifications, please review our specialized diagnostics environment: <a href="https://aurafabrication.ccbp.tech" target="_blank">aurafabrication.ccbp.tech</a></p>
+            <button id="close-fabrication-banner" class="close-fabrication-banner" aria-label="Dismiss Notification"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <div id="toast-wrapper" class="toast-wrapper"></div>
+
+    <div class="promo-ticker">
+        <div class="container ticker-wrap">
+            <p>All discounts are inclusive of standard luxury tax adjustments. | Download the AURA app for an extra 15% off your first heritage acquisition. Use Code: <strong>AURAORD15</strong></p>
+        </div>
+    </div>
+
+    <div class="top-utility-bar">
+        <div class="container top-utility-inner">
+            <div class="utility-left">
+                <p class="delivery-pincode-status">
+                    <i class="fa-solid fa-truck-ramp-box"></i> Dispatching to: <span id="active-pincode" class="clickable-pincode">Select Delivery Location</span>
+                </p>
+            </div>
+            <div class="utility-right">
+                <a href="#store-locator" class="utility-link"><i class="fa-solid fa-store"></i> Our Guild Houses</a>
+                <a href="#support-portal" class="utility-link"><i class="fa-solid fa-circle-info"></i> Client Concierge</a>
+                <div class="account-trigger-wrapper" id="account-dropdown-trigger">
+                    <span class="utility-link clickable" id="account-trigger-text"><i class="fa-regular fa-user"></i> Identity / Log In</span>
+                    <div class="identity-dropdown" id="identity-dropdown">
+                        <div class="dropdown-top-auth">
+                            <h5>Welcome to Aura Farming</h5>
+                            <p>Access your bespoke tailoring profile and track premium allocations.</p>
+                            <button class="btn-auth-primary" id="open-login-modal-btn">Log In / Register</button>
+                        </div>
+                        <div class="dropdown-bottom-nav">
+                            <a href="#orders" class="dropdown-nav-item" id="nav-track-orders"><i class="fa-solid fa-box"></i> Track Active Orders</a>
+                            <a href="#profile" class="dropdown-nav-item" id="nav-bespoke-measurements"><i class="fa-solid fa-id-card"></i> Bespoke Measurements</a>
+                            <a href="#guild-tier" class="dropdown-nav-item" id="nav-guild-tier"><i class="fa-solid fa-crown"></i> Guild Tier Rewards</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="navbar-container" id="sticky-navbar">
+        <div class="container navbar-inner">
+            <button class="mobile-nav-toggle" id="mobile-nav-open" aria-label="Open Navigation Menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+
+            <div class="brand-logo">
+                <a href="index.html">AURA <span class="thin-accent">FARMING</span></a>
+            </div>
+
+            <nav class="desktop-navigation" id="desktop-nav">
+                <ul class="nav-mega-menu">
+                    <li class="mega-menu-item">
+                        <a href="#new-in" class="menu-root-link">NEW IN</a>
+                        <div class="mega-dropdown-pane">
+                            <div class="container mega-dropdown-inner">
+                                <div class="dropdown-col">
+                                    <h4 class="col-heading">Seasonal Apparel</h4>
+                                    <ul>
+                                        <li><a href="#">The Flannel Edit</a></li>
+                                        <li><a href="#">Raw Denim Drops</a></li>
+                                        <li><a href="#">Waxed Cotton Shells</a></li>
+                                        <li><a href="#">Linen Field Shirts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-col">
+                                    <h4 class="col-heading">New Accessories</h4>
+                                    <ul>
+                                        <li><a href="#">Vegetable-Tanned Belts</a></li>
+                                        <li><a href="#">Cordovan Wallets</a></li>
+                                        <li><a href="#">Brass Hardware Goods</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-col image-col">
+                                    <div class="menu-image-card">
+                                        <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="New Apparel Collection">
+                                        <div class="image-overlay-text">The Spring Field Outfit</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="mega-menu-item">
+                        <a href="#clothing" class="menu-root-link">CLOTHING</a>
+                        <div class="mega-dropdown-pane">
+                            <div class="container mega-dropdown-inner">
+                                <div class="dropdown-col">
+                                    <h4 class="col-heading">Tops & Outerwear</h4>
+                                    <ul>
+                                        <li><a href="#">Heavy Overshirts</a></li>
+                                        <li><a href="#">Supima Cotton Knits</a></li>
+                                        <li><a href="#">Utility Work Blazers</a></li>
+                                        <li><a href="#">Field Jackets</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-col">
+                                    <h4 class="col-heading">Bottomwear</h4>
+                                    <ul>
+                                        <li><a href="#">Selvedge Raw Denim</a></li>
+                                        <li><a href="#">Canvas Work Pants</a></li>
+                                        <li><a href="#">Field Chinos</a></li>
+                                        <li><a href="#">Heavy Twill Shorts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-col">
+                                    <h4 class="col-heading">Specialized Sizes</h4>
+                                    <ul>
+                                        <li><a href="#">Athletic Fit Cuts</a></li>
+                                        <li><a href="#">Extended Frame Tailoring</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="mega-menu-item">
+                        <a href="#accessories" class="menu-root-link">ACCESSORIES</a>
+                        <div class="mega-dropdown-pane">
+                            <div class="container mega-dropdown-inner">
+                                <div class="dropdown-col">
+                                    <h4 class="col-heading">Leather Goods</h4>
+                                    <ul>
+                                        <li><a href="#">Bifold & Card Wallets</a></li>
+                                        <li><a href="#">Tool & Equipment Bags</a></li>
+                                        <li><a href="#">Bespoke Watch Straps</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-col">
+                                    <h4 class="col-heading">Utility Accent Pieces</h4>
+                                    <ul>
+                                        <li><a href="#">Solid Brass Key Clips</a></li>
+                                        <li><a href="#">Copper Riveted Goods</a></li>
+                                        <li><a href="#">Silk Pocket Squares</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="#monogram" class="menu-root-link">MONOGRAM SERVICE</a></li>
+                    <li><a href="#heritage-sale" class="menu-root-link text-sale">HERITAGE SALE</a></li>
+                </ul>
+            </nav>
+
+            <div class="navbar-actions">
+                <div class="global-search-bar" id="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="global-search-input" placeholder="Search the archives..." />
+                </div>
+                <button class="action-icon-btn" id="wishlist-toggle-btn">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge-count" id="wishlist-badge-count">0</span>
+                </button>
+                <button class="action-icon-btn" id="sidebar-cart-open-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge-count" id="cart-badge-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="global-sidebar-overlay" id="cart-sidebar-overlay"></div>
+    <aside class="shopping-cart-sidebar" id="shopping-cart-sidebar">
+        <div class="sidebar-header-wrapper">
+            <h3>Bespoke Inventory Bag</h3>
+            <button class="close-sidebar-btn" id="sidebar-cart-close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="sidebar-scrollable-content" id="cart-items-wrapper">
+            <div class="empty-state-notice">
+                <i class="fa-solid fa-scroll"></i>
+                <p>No provisions or garments selected for allocation yet.</p>
+            </div>
+        </div>
+
+        <div class="sidebar-footer-summary">
+            <div class="summary-row">
+                <span>Subtotal Base Amount:</span>
+                <span id="cart-subtotal-value">$0.00</span>
+            </div>
+            <p class="disclaimer-txt">Freight distribution adjustments, value taxes, and duty additions applied during payment authorization processing sequences.</p>
+            <button class="btn-checkout-action" id="checkout-initiate-btn">Proceed To Allocation Settlement</button>
+        </div>
+    </aside>
+
+    <main class="viewport-content-wrapper">
+
+        <section id="new-in" class="hero-showcase-viewport">
+            <div class="hero-frame-overlay">
+                <div class="container hero-layout-flex">
+                    <div class="hero-text-block">
+                        <span class="collection-subtag">The Autumn Harvest Blueprint</span>
+                        <h1>Built for the Fields. Tailored for the City.</h1>
+                        <p>Discover rugged durability balanced seamlessly with clean architectural silhouetting. Our signature canvas frames feature triple-reinforced stress zones engineered using premium long-staple organic twills.</p>
+                        <div class="hero-interactive-action-block">
+                            <button class="btn btn-filled" id="hero-cta-primary">Browse Autumn Outerwear</button>
+                            <button class="btn btn-outline" id="hero-cta-secondary">Explore Leather Provisions</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clothing" class="product-matrix-viewport container">
+            <div class="matrix-header">
+                <h2>Bespoke Seasonal Archive</h2>
+                <p>Explore artisan-crafted garments constructed using long-staple yarns, local vegetable-tanned hides, and hand-finished accents.</p>
+            </div>
+            <div class="catalog-grid-layout" id="main-catalog-grid">
+            </div>
+        </section>
+
+        <section id="accessories" class="editorial-narrative-block">
+            <div class="container narrative-split-flex">
+                <div class="narrative-content-card">
+                    <h3>Sustainably Grounded. Exceptionally Executed.</h3>
+                    <p>At Aura Farming, our designs honor the landscape that supports us. We secure raw fabrics exclusively from certified organic farmers who practice sustainable soil allocation and water resource defense pipelines.</p>
+                    <p>Every pattern, cut, button selection, and structural reinforcement process undergoes an extensive three-stage inspection schedule within our central technical workspace prior to assignment approval operations.</p>
+                    <a href="#monogram" class="action-text-link">Review Our Agricultural Traceability Logs <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal-viewport-overlay" id="quickview-modal-container">
+        <div class="modal-window-frame">
+            <button class="modal-close-btn" id="quickview-modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body-layout-grid" id="quickview-dynamic-body">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-viewport-overlay" id="auth-modal-container">
+        <div class="modal-window-frame small-frame">
+            <button class="modal-close-btn" id="auth-modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="auth-modal-wrapper">
+                <h3 id="auth-title">Access the Aura Archive</h3>
+                <p id="auth-mode-text">Provide credentials to initialize session.</p>
+                <form id="auth-submission-form" class="auth-form">
+                    <div class="form-group-wrap">
+                        <label for="auth-email-field">Electronic Mail Parameter</label>
+                        <input type="email" id="auth-email-field" placeholder="name@domain.com" required />
+                    </div>
+                    <div class="form-group-wrap">
+                        <label for="auth-password-field">Identity Verification Phrase</label>
+                        <input type="password" id="auth-password-field" placeholder="••••••••" required />
+                    </div>
+                    <button type="submit" class="btn-auth-submit" id="auth-submit-btn">Request Archive Initialization</button>
+                </form>
+                <p id="auth-toggle-btn" style="margin-top: 15px; font-size: 0.85rem; cursor: pointer; text-decoration: underline;">Need an account? Register here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-viewport-overlay" id="checkout-modal-container">
+        <div class="modal-window-frame checkout-frame">
+            <button class="modal-close-btn" id="checkout-modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="checkout-layout-grid">
+                <div class="checkout-summary-pane">
+                    <h3 style="margin-bottom: 1rem;">Order Summary</h3>
+                    <div id="checkout-items-list" class="checkout-items-scroll"></div>
+                    <div class="checkout-totals">
+                        <div class="total-row"><span>Subtotal Base Amount</span><span id="checkout-subtotal-display">$0.00</span></div>
+                        <div class="total-row"><span>Freight Logistics</span><span>Complimentary</span></div>
+                        <div class="total-row grand-total"><span>Total Allocation</span><span id="checkout-total-display">$0.00</span></div>
+                    </div>
+                </div>
+                <div class="checkout-form-pane">
+                    <h3 style="margin-bottom: 0.5rem;">Secure Settlement</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 2rem;">Please finalize delivery and authorization matrices below.</p>
+                    <form id="payment-processing-form">
+                        <div class="form-group-wrap"><label>Delivery Coordinates (Address)</label><input type="text" placeholder="123 Heritage Farm Road" required></div>
+                        <div class="form-group-wrap"><label>Cardholder Identity</label><input type="text" placeholder="John Doe" required></div>
+                        <div class="form-group-wrap"><label>Primary Account Number</label><input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19" required></div>
+                        <div class="payment-row-split">
+                            <div class="form-group-wrap"><label>Expiry Cycle</label><input type="text" placeholder="MM/YY" maxlength="5" required></div>
+                            <div class="form-group-wrap"><label>Security Code (CVV)</label><input type="password" placeholder="•••" maxlength="4" required></div>
+                        </div>
+                        <button type="submit" class="btn-auth-submit" style="margin-top: 1.5rem;">Authorize Transaction</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-viewport-overlay" id="orders-modal-container">
+        <div class="modal-window-frame small-frame" style="max-width: 600px;">
+            <button class="modal-close-btn" id="orders-modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="auth-modal-wrapper" style="text-align: left;">
+                <h3 style="margin-bottom: 0.5rem;">Active Tracking Directives</h3>
+                <p style="color: var(--color-text-muted); margin-bottom: 2rem; font-size: 0.9rem;">Review the logistics status of your recent heritage allocations.</p>
+                <div id="orders-list-container" class="portal-content-scroll"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-viewport-overlay" id="measurements-modal-container">
+        <div class="modal-window-frame small-frame" style="max-width: 600px;">
+            <button class="modal-close-btn" id="measurements-modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="auth-modal-wrapper" style="text-align: left;">
+                <h3 style="margin-bottom: 0.5rem;">Bespoke Dimensions</h3>
+                <p style="color: var(--color-text-muted); margin-bottom: 2rem; font-size: 0.9rem;">Update your structural measurements for precision tailoring (in inches).</p>
+                <form id="measurements-form">
+                    <div class="payment-row-split">
+                        <div class="form-group-wrap"><label>Shoulder Width</label><input type="number" step="0.1" placeholder="e.g. 18.5"></div>
+                        <div class="form-group-wrap"><label>Chest Circumference</label><input type="number" step="0.1" placeholder="e.g. 42.0"></div>
+                        <div class="form-group-wrap"><label>Waist (True)</label><input type="number" step="0.1" placeholder="e.g. 34.0"></div>
+                        <div class="form-group-wrap"><label>Inseam</label><input type="number" step="0.1" placeholder="e.g. 32.0"></div>
+                    </div>
+                    <button type="submit" class="btn-auth-submit" style="margin-top: 1rem;">Update Profile Blueprint</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-viewport-overlay" id="tier-modal-container">
+        <div class="modal-window-frame small-frame" style="max-width: 500px;">
+            <button class="modal-close-btn" id="tier-modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="auth-modal-wrapper">
+                <div class="tier-badge"><i class="fa-solid fa-wheat-awn"></i></div>
+                <h3 style="margin-bottom: 0.5rem;">Silver Harvester</h3>
+                <p style="color: var(--color-text-muted); margin-bottom: 2rem; font-size: 0.9rem;">Aura Farming Guild Member</p>
+                <div class="tier-stats">
+                    <div class="tier-stat-box">
+                        <span class="stat-num" id="guild-points-display">1,450</span>
+                        <span class="stat-label">Archive Points</span>
+                    </div>
+                </div>
+                <div class="tier-progress-container">
+                    <div class="progress-labels">
+                        <span>Current: Silver</span>
+                        <span>Next: Gold Artisan (2000 pts)</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="guild-progress-fill" style="width: 72.5%;"></div>
+                    </div>
+                </div>
+                <p style="font-size: 0.8rem; color: #888; margin-top: 1.5rem;">Members gain complimentary expedited logistics and early access to Archive Restocks.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-overlay-dropdown-panel" id="search-overlay-panel">
+        <div class="container search-panel-inner">
+            <div class="search-suggestions-grid">
+                <div class="suggestion-column">
+                    <h4>Suggested Search Vectors</h4>
+                    <ul>
+                        <li><a href="#" class="suggested-tag">Heavy Flannels</a></li>
+                        <li><a href="#" class="suggested-tag">Selvedge Raw Slub Denim</a></li>
+                        <li><a href="#" class="suggested-tag">Waxed Utility Ranch Dusters</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="heritage-sale" class="enterprise-footer-container">
+        <div class="container footer-primary-matrix-grid">
+            <div class="footer-corporate-profile-col">
+                <h3>AURA <span class="accent-title-footer">FARMING</span></h3>
+                <p> Bounded by premium structural standards and organic sourcing blueprints, Aura Farming manufactures heirloom-grade menswear garments intended for heavy field utilization and formal metropolitan transition deployment scripts.</p>
+                <div class="social-comms-channel-wrap">
+                    <a href="#fb" aria-label="Aura Facebook Data Node"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#ig" aria-label="Aura Instagram Media Endpoint"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#yt" aria-label="Aura Broadcast Transmission Feed"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-navigation-col">
+                <h4>System Directories</h4>
+                <ul>
+                    <li><a href="#">Active Track Logistics</a></li>
+                    <li><a href="#">Distribution Schedules</a></li>
+                    <li><a href="#">Archived Diagnostics / Help</a></li>
+                    <li><a href="#">Return Pipeline Authorization</a></li>
+                    <li><a href="#">Corporate Fleet Provisioning</a></li>
+                </ul>
+            </div>
+            <div class="footer-navigation-col" id="monogram">
+                <h4>Sourcing Guilds</h4>
+                <ul>
+                    <li><a href="#">Organic Textile Verification</a></li>
+                    <li><a href="#">Guild House Locations</a></li>
+                    <li><a href="#">Cooperative Agreements</a></li>
+                    <li><a href="#">Traceability Standards Logs</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter-subscription-col">
+                <h4>Dispatch Directives Subscription</h4>
+                <p>Register clear identification points to collect automated field performance notifications, design asset updates, and tactical pricing actions.</p>
+                <form id="footer-newsletter-broadcast-form" class="footer-subscription-input-group">
+                    <input type="email" id="footer-broadcast-email-target" placeholder="Secure electronic mail string address" required />
+                    <button type="submit" aria-label="Confirm Electronic Mail Target Entry"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="container analytical-seo-text-block">
+            <h3>Aura Farming: Premier Menswear Online Platform Architecture</h3>
+            <p>Aura Farming has configured an elite operational baseline within the luxury menswear space, providing an automated and flawless transaction interface context for the discerning consumer. Our brand identity parameters are strictly anchored onto classical tailoring methodologies and advanced environmental resource protection structures, ensuring that each produced component satisfies strict industrial lifespan calculations.</p>
+            <p>Each textile node is traced directly to sustainable farming networks, avoiding high chemical inputs and protecting natural crop integrity profiles during spinning, weaving, and dying protocols. Our dedicated client success management framework stays constantly available via direct communication feeds to verify absolute delivery performance parameters, process adjustments seamlessly, and manage membership benefit files without interruption.</p>
+        </div>
+        <div class="footer-bottom-legal-clearance">
+            <div class="container legal-clearance-inner-flex">
+                <div class="legal-links-wrap">
+                    <a href="#">Data Privacy Directives Architecture</a>
+                    <a href="#">Terms of Use System Framework</a>
+                </div>
+                <div class="corporate-identification-string">
+                    <p>&copy; 2026 Aura Farming Industries Ltd. All Rights Reserved. Powered by Aditya Birla Group.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
